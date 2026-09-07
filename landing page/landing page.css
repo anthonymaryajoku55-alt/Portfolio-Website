@@ -1,0 +1,112 @@
+html{
+    box-sizing:border-box ;
+    height: 100%;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    background-image: url(/images/imig.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: blueviolet;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+.nav-links{
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    
+}
+#hero{
+    background-color: rgb(207, 199, 188);
+    border: 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px rgba(0 0 0  1);
+    width: 80%;
+    height: 40%;
+    justify-self: center;
+    position: relative;
+    top: 40px;
+    
+}  
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+span{
+    display: block;
+    font-weight: 900;
+    font-family: cursive;
+    color: rgb(255, 34, 0);
+}
+.cards{
+    display: flex;
+    gap: 3px;
+    height: 40%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.card-about{
+    width: 30%;
+    border: 0.01rem solid;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    opacity: 10px;
+}
+.card-services{
+    width: 30%;
+     border: 0.01rem solid;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    opacity: 10px;
+}
+.card-advantages{
+width: 30%;
+ border: 0.01rem solid;
+    border-radius: 10px;
+    background-color: bisque;
+    padding: 0.2rem;
+    margin: 0.1rem;
+    opacity: 10px;
+}
+.card-head{
+    color: blue;
+    text-align: center;
+}
+footer{
+    background-color: blueviolet;
+    width: 100%;
+    height: 20%;
+    margin-top: auto;
+}
+t{
+    color: aqua;
+}
+.footer-note{
+    font-weight: 600;
+}
+
+
+

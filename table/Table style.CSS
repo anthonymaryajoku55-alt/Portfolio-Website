@@ -1,0 +1,40 @@
+body{
+    background-color: blueviolet;
+}
+header{
+    background-color: rgb(91, 59, 121);
+    border: 10px;
+    border-radius: 20px;
+    height: 60vh;
+}
+.pic{
+    margin-left: 20px;
+    width: 30vw;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 20px;
+}
+
+.special{
+   background-color: rgb(57, 8, 48); 
+    color: aqua;
+}
+.again{
+     background-color: rgb(91, 59, 121);
+color: rgb(206, 223, 218);
+}
+td{
+    color: rgb(231, 207, 175);
+}
+footer{
+
+     background-color: gray;
+     border: 20px;
+     border-radius: 10px;
+     padding-left: 10px;
+     height: 20vh;
+     padding-top: 10px;
+}
