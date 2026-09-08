@@ -1,0 +1,91 @@
+body{
+    background-image: linear-gradient(rgba(10,20,60,1), rgba(10, 20, 60, 0.2), rgba(10,20,60,1)),
+    url(/images/bgprof.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+header{
+    /* flex-direction: column; */
+    h1{
+        font-size: larger;
+        font-weight: 700;
+        text-align: center;
+        color: antiquewhite;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+.nav-links{
+    display: flex;
+    justify-self: center;
+    gap: 3rem;
+    a{
+        color: black;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        border: 0.3rem;
+        padding: 0.2rem;
+        margin: 0.3rem;
+        border-radius: 0.2rem;
+        background-color: rgb(163, 180, 195);
+        transition: 0.5s ease-in-out;
+    }
+    a:hover{
+        background-color: bisque;
+        transform: rotate3d(1, 0, 0, 360deg);
+        
+    }
+}
+.hero{
+    max-width: 70rem;
+    text-align: center;
+    justify-self: center;
+    line-height: 1.6;
+    color: antiquewhite;
+    
+        
+    
+}
+.sub-head{
+    display: block;
+    font-weight: 700;
+    color: rgb(159, 138, 108);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.block{
+    display: block;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(224, 197, 161);
+}
+.hero-buttons{
+    justify-self: center;
+    button{
+     text-transform: uppercase;  
+     background-color: beige;
+     border-radius: 0.2rem; 
+     padding: 0.3rem;
+     transition: 0.3s;
+    }
+    button:hover{
+        background-color: bisque;
+        transform: translateY(-0.2rem);
+
+    }
+}
+footer{
+    margin-top: auto;
+}
+ul{
+    color: antiquewhite;
+    a{
+        color: rgb(217, 217, 114);
+    }
+}
+
