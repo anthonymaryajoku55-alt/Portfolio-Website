@@ -1,5 +1,5 @@
 body{
-    min-height: 100vh;
+    min-height: auto;
     /* background: linear-gradient(#000000,#3b2715,#412d15, #b2a05a ); */
 }
 .nav-bar{
@@ -45,10 +45,7 @@ p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr) );
     column-gap: 20px;
-    /* background-color: #412d15; */
-    background: transparent;
-    border: 2px solid;
-    padding: 10px;
+    
 
 }
 img{

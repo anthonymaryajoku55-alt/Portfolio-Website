@@ -1,25 +1,34 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-image: linear-gradient(rgba(10,20,60,1), rgba(10, 20, 60, 0.2), rgba(10,20,60,1)),
-    url(/images/bgprof.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 97vh;
     display: flex;
     flex-direction: column;
-    
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
 
+.grad-design{
+     background-image: linear-gradient( rgba(10,20,60,1), rgba(10,20,60,0.4), rgba(10, 20, 60, 2)), url(/images/bgprof.jpeg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 header{
-    /* flex-direction: column; */
+    position: sticky;
+    top: 0rem;
+    background-color: rgb(10, 20, 60);
+    z-index: 2;
     h1{
         font-size: larger;
         font-weight: 700;
         text-align: center;
         color: antiquewhite;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
+
 .nav-links{
     display: flex;
     justify-self: center;
@@ -43,35 +52,58 @@ header{
     }
 }
 .hero{
+    box-sizing: inherit;
+    min-height: 12rem;
     max-width: 70rem;
     text-align: center;
     justify-self: center;
     line-height: 1.6;
-    color: antiquewhite;
-    
-        
-    
+    color: antiquewhite; 
+    h1{
+        color: rgb(228, 197, 157);
+    }
+}
+
+.abouts{
+    box-sizing: inherit;
+background-color: rgb(225, 232, 245);
+h1{
+    text-align: center;
+    color: rgb(10, 20, 60);
+    text-transform: uppercase;
+}
+p{
+    text-align: center;
+    max-width: 70rem;
+    margin-left: 4rem;
 }
 .sub-head{
     display: block;
-    font-weight: 700;
-    color: rgb(159, 138, 108);
+    font-weight: 100rem;
+    color: rgb(20, 35, 70);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .block{
     display: block;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-color: rgb(224, 197, 161);
+color: rgb(45,55,80);
 }
-.hero-buttons{
-    justify-self: center;
+
+.about-button{
+    text-align: center;
     button{
-     text-transform: uppercase;  
+       
      background-color: beige;
      border-radius: 0.2rem; 
+     margin: 2rem;
      padding: 0.3rem;
-     transition: 0.3s;
+     transition: 0.3s ease;
+     a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+     }
     }
     button:hover{
         background-color: bisque;
@@ -79,13 +111,81 @@ color: rgb(224, 197, 161);
 
     }
 }
-footer{
-    margin-top: auto;
 }
-ul{
-    color: antiquewhite;
-    a{
-        color: rgb(217, 217, 114);
+
+.projects-sctn{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+    button{
+       
+     background-color: gray;
+     border-radius: 0.2rem; 
+     margin: 2rem ;
+     padding: 0.3rem;
+     transition: 0.3s ease;
+     a{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: whitesmoke;
+     }
+    }
+    button:hover{
+        background-color: rgb(65, 57, 57);
+        transform: translateY(-0.2rem);
     }
 }
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23.75rem, 1fr) );
+    column-gap: 1.25rem;
+
+}
+img{
+    max-width: 100%;
+}
+video{
+    max-width: 100%;
+}
+
+footer{
+    margin-top: auto;
+    background-color: rgb(10, 20, 60);
+h2{
+    color: rgb(225, 232, 245);
+    margin: 1.5rem;
+}
+ul{
+    color: rgb(160, 175, 200);
+    a{
+        color: rgb(225, 232, 245);
+    }
+}
+}
+
+/* -------mobile screens---------- */
+@media (max-width: 800px){
+    *, ::after, ::before{
+        box-sizing: border-box;
+    }
+    .nav-links{
+    display: flex;
+    justify-self: center;
+    gap: 0.01rem;
+    }     
+    .projects{
+        
+        grid-template-columns: repeat(2, minmax(2rem, 1fr));
+        h2{
+            font-size: small;
+        }
+    }
+}
+
 
