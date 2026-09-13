@@ -7,6 +7,7 @@ body{
     width: 100%;
     margin: 0;
     overflow-x: hidden;
+    min-height: 100%;
 }
 
 .grad-design{
@@ -179,7 +180,7 @@ ul{
     justify-self: center;
     gap: 0.01rem;
     }     
-    .projects{
+    .project{
         
         grid-template-columns: repeat(2, minmax(2rem, 1fr));
         h2{
