@@ -8,8 +8,6 @@
 }
 body{
     box-sizing: inherit
-    /* min-height: auto; */
-    /* background: linear-gradient(#000000,#3b2715,#412d15, #b2a05a ); */
 }
 .nav-bar{
     box-sizing: border-box;
@@ -39,9 +37,8 @@ a{
     width: 12rem;
 }
 #hero{
-    border: o.125rem solid;
+    border: 0.125rem solid;
     border-color: antiquewhite;
-    /* background-color: #3b2715; */
      background: transparent;
     padding: 3rem;
     margin: auto;
