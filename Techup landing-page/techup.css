@@ -107,7 +107,7 @@ p{
 }
 .about-sctn{
     background: linear-gradient( rgba(245,242,236,0.5)), 
-    url(../images/techup-about.jpeg);
+    url(/images/techup-about.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

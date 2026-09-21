@@ -8,7 +8,7 @@
 }
 .grad-img{
 background: linear-gradient( rgba(8,18,45,1), rgba(18,52,95,0.01), rgba(8,18,45,0.01)),
- url(../images/landing-hero-img.jpg);
+ url(/images/landing-hero-img.jpg);
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -83,6 +83,9 @@ a{
     text-align: center;
     transition: transform 1s ease;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2{
         text-align: center;
         color: #fff8ea;
@@ -94,6 +97,7 @@ a{
         line-height: 1.6;
     }
 }
+
 #hero:hover{
     transform: scaleY(1.2);
 }
