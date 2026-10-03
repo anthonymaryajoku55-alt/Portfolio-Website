@@ -1,0 +1,63 @@
+body{
+    background:linear-gradient(135deg,rgba(3,15,43,0.85),rgba(22,43,92,0.65),rgba(75,44,114,0.55) ),
+    url(/images/web-log.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.fs-2{
+    color: #ffffff;
+}
+.fs-4{
+    color: rgb(190,205,235);
+}
+.row{
+    transition: transform o.7s ease;
+}
+.row:hover{
+    transform: scale(1.04);
+}
+label{
+    color: rgb(170,135,255);
+}
+legend{
+    color: rgb(225,232,245);
+}
+button{
+    transition: transform 0.3s ease;
+}
+button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.link{
+    color: rgba(125,180,255,1);
+}
+.container-fluid{
+    backdrop-filter: 5px;
+}
+/* for tiny screens */
+@media(max-width:346px){
+    .btn-grp{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+/* for smaller screens */
+@media(max-width:760px){
+    .form-group{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{
+        min-width: 80%;
+    }
+    .form-control{
+        min-width: 100%;
+    }
+    .btn-grp{
+        gap: 0.3rem;
+    }
+}

@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+*,::before,::after{
+    box-sizing: inherit;
+}
+header{
+    background-color: #020b22;
+    z-index: 1;
+}
+.hero{
+    background: linear-gradient(#071436, #00050f);
+}
+p{
+    color:  rgb(205,211,220);
+    line-height: 1.8;
+}
+.features-sctn{
+    background-color: #051630;
+    
+}
+.card-how{
+background: transparent;
+}
+.card-cs{
+    background-color: rgba(38, 60, 111, 0.3);
+}
+.how-to-use{
+    background-color: #00050f;
+}
+.number{
+    background-color: #071436;
+}
+.stories-sctn{
+    background-color: #051630;
+}
+footer{
+    background-color: #00050f;
+}
+.copy{
+    margin-top: auto;
+    border-top: 1px solid rgb(205,211,220);
+    font-size: smaller;
+}
+/* smaller screens */
+@media(max-width: 760px){
+    .footer-query{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-query{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+    h1{
+        margin-right: auto;
+    }
+}
+}
+
