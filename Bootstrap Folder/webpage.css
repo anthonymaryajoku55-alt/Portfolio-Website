@@ -47,19 +47,9 @@ footer{
 }
 /* smaller screens */
 @media(max-width: 760px){
-    .footer-query{
+    /* .footer-query{
         display: flex;
         flex-direction: column;
-    }
-    .header-query{
-        display: flex;
-        flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    
-    h1{
-        margin-right: auto;
-    }
-}
+    } */
 }
 
